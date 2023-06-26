@@ -1,3 +1,5 @@
+// using const to declare a variable
+
 export default function taskBlock (trueOrFalse) {
   const task = false;
   const task2 = true;
