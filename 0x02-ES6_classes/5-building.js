@@ -7,11 +7,11 @@ export default class Building {
     }
   }
 
-  get() {
+  get sqft() {
     return this._sqft;
   }
 
-  set sqf(sqft) {
+  set sqft(sqft) {
     this._sqft = sqft;
   }
 }
