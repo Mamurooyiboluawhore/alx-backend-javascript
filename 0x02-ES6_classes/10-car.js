@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 
 export default class Car {
-  constructor (brand, motor, color) {
+  constructor(brand, motor, color) {
     if (typeof brand === 'string') {
       this._brand = brand;
     }
@@ -13,9 +13,9 @@ export default class Car {
     }
   }
 
-  cloneCar () {
+  cloneCar() {
     const hasSpecies = this.constructor[Symbol.species];
-    const objectClone = hasSpecies ? new this.constructor[Symbol.species]() : new this.constructor();
-    return objectClone;
+    const objClone = hasSpecies ? new this.constructor[Symbol.species]() : new this.constructor();
+    return objClone;
   }
 }
