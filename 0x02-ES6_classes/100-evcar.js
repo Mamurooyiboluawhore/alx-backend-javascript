@@ -6,4 +6,9 @@ export default class extends Car {
     super(brand, motor, color);
     this._range = range;
   }
+
+  // eslint-disable-next-line class-methods-use-this
+  cloneCar() {
+    return new Car();
+  }
 }
