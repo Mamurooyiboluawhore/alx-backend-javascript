@@ -4,5 +4,5 @@ export default function getStudentIdsSum(studentId) {
     const add = list.reduce((accumulator, currentValue) => accumulator + currentValue);
     return add;
   }
-  return;
+  return 0;
 }
