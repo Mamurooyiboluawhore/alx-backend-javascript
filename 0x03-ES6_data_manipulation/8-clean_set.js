@@ -7,7 +7,8 @@ export default function cleanSet(set, substring) {
         array.push(stripped);
       }
     }
+    const concate = array.join('-');
+    return concate;
   }
-  const concate = array.join('-');
-  return concate;
+  return '';
 }
