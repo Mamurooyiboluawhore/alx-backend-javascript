@@ -1,4 +1,4 @@
-export default function cleanSet(set, startString) {
+/* export default function cleanSet(set, startString) {
   const array = [];
   if ((set instanceof Set) && (startString.length !== 0)) {
     for (const element of set) {
@@ -11,4 +11,16 @@ export default function cleanSet(set, startString) {
     return concatString;
   }
   return '';
+} */
+
+export default function cleanSet(set, startString) {
+  const array = [];
+
+  for (const value of set) {
+    if (value.startsWith(startString)) {
+      array.push(value.slice(startString.length));
+    }
+  }
+
+  return array.join('-');
 }
